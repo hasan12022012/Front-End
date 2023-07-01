@@ -1185,3 +1185,169 @@ header .container .secondhead nav ul li a:hover {
 }
 
 /* joinnewsletter css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* footer css start //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+footer {
+    background: #FEF4F4;
+    margin-top: 20px;
+}
+
+footer .container .lastpart {
+    padding-top: 50px;
+    padding-right: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .lastpart .socialmedia p {
+    color: #454E6D;
+    font-size: 16px;
+    margin-top: 22px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+footer .container .lastpart .socialmedia ul {
+    margin-top: 20px;
+}
+
+footer .container .lastpart .socialmedia ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+footer .container .lastpart .socialmedia ul li a {
+    display: inline-block;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+footer .container .lastpart .socialmedia ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+footer .container .lastpart .socialmedia ul li a:hover {
+    color: white;
+    border-color: red;
+    background-color: red;
+    transition: all 0.5s;
+}
+
+footer .container .lastpart .socialmedia ul li .fb {
+    color: #9498A7;
+    border-style: solid;
+    border-color: #9498A7;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+footer .container .lastpart .socialmedia ul li .igram {
+    color: #9498A7;
+    border-style: solid;
+    border-color: #9498A7;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+footer .container .lastpart .socialmedia ul li .in {
+    color: #9498A7;
+    border-style: solid;
+    border-color: #9498A7;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+footer .container .lastpart .socialmedia ul li .ytube {
+    color: #9498A7;
+    border-style: solid;
+    border-color: #9498A7;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+footer .container .lastpart .bookcategory{
+    margin-left: 170px;
+}
+
+footer .container .lastpart .bookcategory div {
+    display: flex;
+}
+
+footer .container .lastpart .bookcategory div ul {
+    padding-right: 150px;
+}
+
+footer .container .lastpart .bookcategory h4 {
+    font-family: "Roboto", sans-serif;
+    color: #232F55;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer .container .lastpart .bookcategory div ul li {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+footer .container .lastpart .bookcategory div ul li:hover {
+    text-decoration: underline;
+}
+
+footer .container .lastpart .bookcategory div ul li a {
+    color: #454E6D;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline transparent;
+}
+
+footer .container .lastpart .sitemap h4 {
+    font-family: "Roboto", sans-serif;
+    color: #232F55;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer .container .lastpart .sitemap ul li {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+footer .container .lastpart .sitemap ul li:hover {
+    text-decoration: underline;
+}
+
+footer .container .lastpart .sitemap ul li a {
+    color: #454E6D;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline transparent;
+}
+
+footer .container h1{
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* footer css end //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
