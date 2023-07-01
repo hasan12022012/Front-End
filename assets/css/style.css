@@ -1060,5 +1060,45 @@ header .container .secondhead nav ul li a:hover {
     transform: scaleX(1);
 }
 
-
 /* advertisement css end ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* joinnewsletter css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.joinnewsletter {
+    margin-top: 30px;
+}
+
+.joinnewsletter .container .sub {
+    background-image: url(../img/joinsectionback.webp);
+    background-size: 100% 100%;
+    height: 365px;
+}
+
+.joinnewsletter .container .sub h3{
+    font-size: 40px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-top: 75px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.joinnewsletter .container .sub p{
+    color: #9498A7;
+    font-size: 16px;
+    padding-top: 21px;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* joinnewsletter css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
