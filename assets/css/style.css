@@ -82,6 +82,26 @@ header .container .firsthead .list ul li a {
     transition: all 0.5s;
 }
 
+header .container .firsthead .list ul li sup{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #FF1616;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    top: 18px;
+    right: 277px;
+    transition: all .3s ease-out 0s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+}
+
+header .container .firsthead .list ul li sup:hover{
+    transform: translateY(-0.2rem);
+}
 
 header .container .firsthead .list ul li a:hover {
     color: red;
@@ -1196,7 +1216,7 @@ footer {
 }
 
 footer .container .lastpart {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-right: 180px;
     display: flex;
     justify-content: space-between;
@@ -1351,3 +1371,4 @@ footer .container h1{
 }
 
 /* footer css end //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+

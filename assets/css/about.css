@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+/* part2body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part2body .container .aboutsection{
+    background-image: url(../img/aboutpic.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.part2body .container .aboutsection h2{
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 130px;
+}
+/* part2body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part3body .container .ourstory{
+    align-items: center;
+    width: 960px;
+    margin-left: 100px;
+}
+
+.part3body .container .ourstory h2{
+    font-size: 30px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 100px;
+    margin-bottom: 22px;
+
+}
+
+.part3body .container .ourstory p{
+    font-family: "Roboto",sans-serif;
+    color: #301A22;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+.part3body .container .ourgoal{
+    align-items: center;
+    width: 960px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.part3body .container .ourgoal h2{
+    font-size: 30px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 100px;
+    margin-bottom: 22px;
+
+}
+
+.part3body .container .ourgoal p{
+    font-family: "Roboto",sans-serif;
+    color: #301A22;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+/* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
