@@ -1,16 +1,20 @@
 "use strict";
 
-$(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+$(document).ready(function () {
 
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	})
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+    })
+
+
+
+    $('.listofdetailscard').slick();
 
 })
 
@@ -18,16 +22,16 @@ $(document).ready(function(){
 
 var counter = 1;
 setInterval(function () {
-  document.getElementById('radio' + counter).checked = true;
-  counter++;
-  if (counter > 3) {
-    counter = 1;
-  }
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 3) {
+        counter = 1;
+    }
 }, 3000);
 
 
 
-// bestsellingbooksever//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// bestsellingbooksever js start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -70,7 +74,7 @@ const dragStart = (e) => {
 }
 
 const dragging = (e) => {
-    if(!isDragging) return; // if isDragging is false return from here
+    if (!isDragging) return; // if isDragging is false return from here
     // Updates the scroll position of the carousel based on the cursor movement
     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
@@ -82,13 +86,13 @@ const dragStop = () => {
 
 const infiniteScroll = () => {
     // If the carousel is at the beginning, scroll to the end
-    if(carousel.scrollLeft === 0) {
+    if (carousel.scrollLeft === 0) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
         carousel.classList.remove("no-transition");
     }
     // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+    else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
@@ -96,11 +100,11 @@ const infiniteScroll = () => {
 
     // Clear existing timeout & start autoplay if mouse is not hovering over carousel
     clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
+    if (!wrapper.matches(":hover")) autoPlay();
 }
 
 const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
     // Autoplay the carousel after every 2500 ms
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
 }
@@ -112,3 +116,4 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+// bestsellingbooksever js end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -82,22 +82,21 @@ header .container .firsthead .list ul li a {
     transition: all 0.5s;
 }
 
-header .container .firsthead .list ul li sup{
-    position: absolute;
+header .container .firsthead .list ul li sup {
+    display: grid;
+    place-items: center;
     width: 24px;
     height: 24px;
     background: #FF1616;
-    color: #fff;
-    line-height: 24px;
-    text-align: center;
+    color: white;
     border-radius: 30px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    top: 18px;
-    right: 277px;
-    transition: all .3s ease-out 0s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+    position: absolute;
+    top:20px;
+    right:278px
 }
+
 
 header .container .firsthead .list ul li sup:hover{
     transform: translateY(-0.2rem);
@@ -584,7 +583,7 @@ header .container .secondhead nav ul li a:hover {
 }
 
 .featuredthisweek .container .detailscard {
-    width: 966px;
+    width: 966px; 
     height: 485px;
     background-color: red;
 }
@@ -702,6 +701,19 @@ header .container .secondhead nav ul li a:hover {
     transform: scaleY(1);
 }
 
+.featuredthisweek .container .flex-of-cards-book{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featuredthisweek .container .flex-of-cards-book .thehistoryofphipino img {
+   position: relative;
+   bottom:90px;
+}
+
+.featuredthisweek .container .listofdetailscard{
+    width: 968px;
+}
 /* featuredthisweek css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
