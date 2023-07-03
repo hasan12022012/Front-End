@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+/* part2body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.part2body .container .contactsection {
+    background-image: url(../img/aboutpic.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.part2body .container .contactsection h2 {
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* part2body css end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* part3body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.prt3body{
+    padding-top: 30px;
+}
+/* part3body css end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* part4body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.part4body .container .part4bodycontent .getintouch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part4body .container .part4bodycontent .getintouch form h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.part4body .container .part4bodycontent .getintouch form textarea {
+    width: 850px !important;
+    height: 175px !important;
+    outline: none;
+    border: 1px solid #CACACA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-left: 18px;
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+
+.part4body .container .part4bodycontent .getintouch form div input {
+    height: 48px;
+    outline: none;
+    padding-left: 18px;
+    border: 1px solid #CACACA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    width: 414px;
+}
+
+.part4body .container .part4bodycontent .getintouch form div #entermail {
+    margin-left: 19px;
+}
+
+.part4body .container .part4bodycontent .getintouch form #subject {
+    height: 48px;
+    outline: none;
+    padding-left: 18px;
+    border: 1px solid #CACACA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    width: 850px;
+    margin-top: 19px;
+}
+
+.part4body .container .part4bodycontent .getintouch form .send button {
+    background: #fff;
+    color: #FF1616 !important;
+    display: inline-block;
+    padding: 18px 44px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    border: 1px solid #FF1616;
+    cursor: pointer;
+    width: 155px;
+    height: 65px;
+    margin-top: 50px;
+}
+
+.part4body .container .part4bodycontent .getintouch form .send button:hover {
+    background: #FF1616;
+    color: #fff !important;
+    border: 1px solid #FF1616;
+    transition: all .3s ease-out 0s;
+}
+
+
+
+
+
+.part4body .container .part4bodycontent .contactus {
+    border-radius: 5px 5px 5px 5px;
+    width: 330px;
+    padding-top: 19px;
+}
+
+
+
+.part4body .container .part4bodycontent .contactus .address i {
+    margin-top: 35px;
+    margin-left: 25px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part4body .container .part4bodycontent .contactus .address h1 {
+    position: relative;
+    bottom: 45px;
+    left: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.part4body .container .part4bodycontent .contactus .address p {
+    position: relative;
+    bottom: 42px;
+    left: 90px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #8a8a8a;
+}
+
+.part4body .container .part4bodycontent .contactus .email i {
+    margin-left: 25px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part4body .container .part4bodycontent .contactus .email h1 {
+    position: relative;
+    bottom: 45px;
+    left: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.part4body .container .part4bodycontent .contactus .email p {
+    position: relative;
+    bottom: 42px;
+    left: 90px;
+    font-family: 'Roboto', sans-serif;
+    color: #8a8a8a;
+}
+
+.part4body .container .part4bodycontent .contactus .phone i {
+    margin-left: 25px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part4body .container .part4bodycontent .contactus .phone h1 {
+    position: relative;
+    bottom: 45px;
+    left: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.part4body .container .part4bodycontent .contactus .phone p {
+    position: relative;
+    bottom: 42px;
+    left: 90px;
+    font-family: 'Roboto', sans-serif;
+    color: #8a8a8a;
+}
+
+/* part4body css end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
