@@ -11,19 +11,22 @@
     margin: auto;
 }
 
+.signup {
+    height: 790px;
+}
 
-.login .container .window {
+.signup .container .signupwindow {
     background: #fff;
     padding: 55px 60px 50px 50px;
     box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2);
     width: 700px;
-    height: 630px;
+    height: 750px;
     position: relative;
-    top: 55px;
+    top: 20px;
     left: 320px
 }
 
-.login .container .window .loginhead span {
+.signup .container .signupwindow .signuphead span {
     color: #140C40;
     font-size: 30px;
     font-weight: 600;
@@ -33,7 +36,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.login .container .window .loginhead p {
+.signup .container .signupwindow .signuphead p {
     font-family: "Roboto", sans-serif;
     color: #301A22;
     font-size: 16px;
@@ -43,11 +46,11 @@
     text-align: center;
 }
 
-.login .container .window form {
+.signup .container .signupwindow form {
     position: relative;
 }
 
-.login .container .window label {
+.signup .container .signupwindow form label {
     display: block;
     font-size: 17px;
     margin-bottom: 6px;
@@ -56,7 +59,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.login .container .window form input {
+.signup .container .signupwindow form input {
     border: 1px solid #C9C9C9;
     width: 100%;
     height: 50px;
@@ -66,48 +69,21 @@
     outline: none;
 }
 
-.login .container .window form i {
+.signup .container .signupwindow form i {
     position: absolute;
     right: 10px;
-    top: 140px;
+    top: 236px;
     cursor: pointer;
 }
 
-.login .container .window form .keepme {
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-}
-
-.login .container .window form .keepme .check {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-    vertical-align: bottom;
-    accent-color: #FF1616;
-    transition: .5s;
-}
-
-.login .container .window form .keepme a {
-    color: #FF1616;
-    font-size: 1rem;
-    font-weight: 400;
-    float: right;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    position: absolute;
-    right: 0px;
-}
-
-.login .container .window form .loginfoot {
+.signup .container .signupwindow form .signupfoot {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 90px;
 }
 
-.login .container .window form .loginfoot p {
+.signup .container .signupwindow form .signupfoot p {
     font-family: "Roboto", sans-serif;
     color: #301A22;
     font-size: 16px;
@@ -116,13 +92,13 @@
     line-height: 1.6;
 }
 
-.login .container .window form .loginfoot p a {
+.signup .container .signupwindow form .signupfoot p a {
     color: #FF1616;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
 }
 
-.login .container .window form .loginfoot button {
+.signup .container .signupwindow form .signupfoot button {
     background: #FF1616;
     height: 60px;
     padding: 10px 43px;
