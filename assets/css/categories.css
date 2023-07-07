@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+
+/* part2body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part2body .container .bookcategoryimgsection {
+    background-image: url(../img/bookcategoryimgsection.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.part2body .container .bookcategoryimgsection h2 {
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* part2body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part3body {
+   margin-top: 50px;
+}
+
+.part3body .container .filtersettings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part3body .container .filtersettings .filterwindow {
+    width: 410px;
+    height: 1000px;
+    border: 1px solid #ededed;
+    padding: 30px 19px 30px 30px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbygenres h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbygenres label {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: #232F55;
+    font-size: 16px;
+    align-items: center;
+    padding-top:5px ;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbygenres label input {
+    accent-color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range {
+    margin-left: 20px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .range-slider {
+    position: relative;
+    width: 314px;
+    height: 2px;
+    border-radius: 15px;
+    background: red;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .range-slider .progress {
+    position: absolute;
+    left: 25%;
+    right: 0%;
+    height: 100%;
+    border-radius: 15px;
+    background: red;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .range-slider input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    -webkit-appearance: none;
+    pointer-events: none;
+    background: none;
+    outline: none;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .range-slider .range-min::-webkit-slider-thumb {
+    pointer-events: auto;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fcfcfc 0% 0% no-repeat padding-box;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .range-slider .range-max::-webkit-slider-thumb {
+    pointer-events: auto;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fcfcfc 0% 0% no-repeat padding-box;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .rangeview {
+    display: flex;
+    margin-left: 18px;
+    align-items: center;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .rangeview span {
+    margin-right: 18px;
+    margin-left: -30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .rangeview .min-value input {
+    border: none;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyprice .range .rangeview .max-value input {
+    border: none;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid #EEE1E0;
+    border-radius: 30px;
+    z-index: 999;
+    margin-top: 30px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating .wrapper {
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating img {
+    width: 10px;
+    transition: all 0.2s;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating img:hover {
+    transform: rotate(180deg);
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating:hover img {
+    transform: rotate(180deg);
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating .list {
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #EEE1E0;
+    cursor: pointer;
+    max-height: 250px;
+    width: 100%;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating .list .item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    font-size: 15px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating .list .item img {
+    width: 20px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbyrating .list .item:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.part3body .container .filtersettings .filterwindow .filterbypublisher {
+    margin-top: 30px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbypublisher h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbypublisher label {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: #232F55;
+    font-size: 16px;
+    align-items: center;
+    padding-top:5px ;
+}
+
+.part3body .container .filtersettings .filterwindow .filterbypublisher label input {
+    accent-color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterauthorname {
+    margin-top: 30px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterauthorname h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.part3body .container .filtersettings .filterwindow .filterauthorname label {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: #232F55;
+    font-size: 16px;
+    align-items: center;
+    padding-top:5px ;
+}
+
+.part3body .container .filtersettings .filterwindow .filterauthorname label input {
+    accent-color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.part3body .container .filtersettings .browsemenu {
+    position: relative;
+}
+
+.part3body .container .filtersettings .browsemenu select {
+    border-radius: 30px;
+    width: 270px;
+    height: 45px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 11px 19px 11px 18px;
+    color: #140C40;
+    line-height: 20px;
+    border: 1px solid #EEE1E0;
+    outline: none;
+    font-size: 14px;
+    position: absolute;
+    right:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.part3body .container .filtersettings .browsemenu .books {
+    width:890px;
+    margin-top: 45px;
+}
+
+
+.part3body .container .filtersettings .browsemenu .books .carousel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card {
+    border: 1px solid #EEE1E0;
+    width: 198px;
+    list-style-type: none;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content {
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content p {
+    color: #9498A7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 13px;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text {
+    display: flex;
+    align-items: center;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text .starsreview i {
+    font-size: 13px;
+    color: #FF5700;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text .starsreview p {
+    color: #9498A7;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text .starsreview p span {
+    color: #FF5700;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text .price {
+    margin-left: 40px;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card .card_content .card_text .price span {
+    cursor: pointer;
+    font-weight: 500;
+    color: #FF1616;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card:focus,
+.part3body .container .filtersettings .browsemenu .books .carousel .card:hover {
+    transform: scale();
+    box-shadow: 5px 5px 5px 5px rgba(195, 2, 2, 0.2);
+    transition: 0.5s;
+}
+
+.part3body .container .filtersettings .browsemenu .books .carousel .card:hover a {
+    color: red;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
