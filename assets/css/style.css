@@ -71,15 +71,8 @@ header .container .firsthead .list ul li {
     text-decoration: none;
 }
 
-header .container .firsthead .list ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: capitalize;
-    color: #454E6D;
-    font-weight: 400;
-    display: inline-block;
-    transition: all 0.5s;
+header .container .firsthead .list ul .sup{
+    position: relative;
 }
 
 header .container .firsthead .list ul li sup {
@@ -93,10 +86,23 @@ header .container .firsthead .list ul li sup {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top:20px;
-    right:278px
+    top:-9px;
+    right:-8px;
+    position:absolute;
 }
 
+
+
+header .container .firsthead .list ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: #454E6D;
+    font-weight: 400;
+    display: inline-block;
+    transition: all 0.5s;
+}
 
 header .container .firsthead .list ul li sup:hover{
     transform: translateY(-0.2rem);
