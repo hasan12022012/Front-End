@@ -42,6 +42,7 @@
 /* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .part3body {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .part3body .container .returning-customer .check-title {
@@ -806,12 +807,115 @@
     text-transform: capitalize;
 }
 
-.part3body .container .billing-details .your-order .payment-item label input::after {
-    accent-color: red;
+.part3body .container .billing-details .your-order .payment-item {
+    margin-top: 15px;
 }
 
-.part3body .container .billing-details .your-order .payment-item label input:focus {
+.part3body .container .billing-details .your-order .payment-item div {
+    display: flex;
+}
+
+.part3body .container .billing-details .your-order .payment-item div label {
+    cursor: pointer;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    color: #2a2a2a;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.part3body .container .billing-details .your-order .payment-item div input{
     accent-color: red;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+
+.part3body .container .billing-details .your-order .payment-item p{
+    width: 355px;
+    height: 84px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    background: white;
+    margin-bottom: 20px;
+}
+
+
+
+
+.part3body .container .billing-details .your-order .terms-conditions{
+    margin-bottom: 25px;
+}
+
+.part3body .container .billing-details .your-order .terms-conditions label {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.part3body .container .billing-details .your-order .terms-conditions label input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    vertical-align: bottom;
+    accent-color: #FF1616;
+    transition: .5s;
+}
+
+.part3body .container .billing-details .your-order .terms-conditions label  a{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+
+
+.part3body .container .billing-details .your-order .proceed-to-paypal .proceedbtn button {
+    width: 360px;
+    height: 43px;
+    border-radius: 35px;
+    background-color: #FF1616;
+    border: none;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    overflow: hidden;
+}
+
+.part3body .container .billing-details .your-order .proceed-to-paypal  .proceedbtn button h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.part3body .container .billing-details .your-order .proceed-to-paypal   .proceedbtn button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    background: #d00101;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.part3body .container .billing-details .your-order .proceed-to-paypal   .proceedbtn button::before {
+    transform: scaleX(0);
+}
+
+.part3body .container .billing-details .your-order .proceed-to-paypal   .proceedbtn button:hover::before {
+    transform: scaleX(1);
 }
 
 /* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
