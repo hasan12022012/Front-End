@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="firsthead">
+                <div class="logo">
+                    <a href=""><img src="assets/img/logo.png.webp" alt=""></a>
+                </div>
+                <div class="searchbar">
+                    <label for="search">
+                        <input type="text" id="search" placeholder="Search book by author or publisher">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass" id="iconsearch"></i>
+                    </label>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Track Order</a>
+                        </li>
+                        <li class="sup">
+                            <a href=""><img src="assets/img/cart.svg" alt=""></a>
+                            <sup>0</sup>
+                        </li>
+                        <li>
+                            <a href="login.html"><button class="signinbtn">
+                                    <h1>Sign in</h1>
+                                </button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondhead">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="part2body">
+        <div class="container">
+            <div class="cartsection">
+                <h2>Cart</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="part3body">
+        <div class="container">
+            <div class="title-of-product">
+                <div class="product">
+                    <h4>Product</h4>
+                </div>
+                <div class="price-quantity-total">
+                    <h4>Price</h4>
+                    <h4>Quantity</h4>
+                    <h4>Total</h4>
+                </div>
+            </div>
+            <div class="about-of-product">
+                <div class="img-of-product">
+                    <img src="assets/img/best-books1.jpg.webp" alt="">
+                    <h3>Minimalistic shop for multipurpose use</h3>
+                </div>
+                <div class="price-of-product">
+                    <h4>$360.00</h4>
+                    <div class="quantity-product">
+                        <input type="button" class="dcrbtn" onclick="decrementValue()" value="-" />
+                        <input type="text" class="number" name="quantity" value="1" maxlength="2" max="10" size="1"
+                            id="number" />
+                        <input type="button" class="incbtn" onclick="incrementValue()" value="+" />
+                    </div>
+                    <h4>$720.00</h4>
+                </div>
+            </div>
+            <div class="about-of-product">
+                <div class="img-of-product">
+                    <img src="assets/img/best_selling1.jpg.webp" alt="">
+                    <h3>Minimalistic shop for multipurpose use</h3>
+                </div>
+                <div class="price-of-product">
+                    <h4>$360.00</h4>
+                    <div class="quantity-product">
+                        <input type="button" class="dcrbtn" onclick="decrementValue()" value="-" />
+                        <input type="text" class="number" name="quantity" value="1" maxlength="2" max="10" size="1"
+                            id="number" />
+                        <input type="button" class="incbtn" onclick="incrementValue()" value="+" />
+                    </div>
+                    <h4>$720.00</h4>
+                </div>
+            </div>
+            <div class="update-close">
+                <a href="" class="update"><button class="update-btn"><h1>Update Cart</h1></button></a>
+                <a href="" class="close"><button class="close-btn"><h1>Close Coupon</h1></button></a>
+            </div>
+            <div class="subtotal">
+                <h5 class="subtotal-price">Subtotal</h5>
+                <h5>$2160.00</h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="lastpart">
+                <div class="socialmedia">
+                    <a href=""><img src="assets/img/logo.png.webp" alt=""></a>
+                    <p>Get the breathing space now, and we’ll <br> extend your term at the other end year for <br> go.
+                    </p>
+                    <ul>
+                        <li>
+                            <a class="fb" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="igram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a class="in" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a class="ytube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bookcategory">
+                    <h4>Book Category</h4>
+                    <div>
+                        <ul>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Horror - Thriller</a></li>
+                            <li><a href="">Love Stories</a></li>
+                            <li><a href="">Science Fiction</a></li>
+                            <li><a href="">Business</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Biography</a></li>
+                            <li><a href="">Astrology</a></li>
+                            <li><a href="">Digital Marketing</a></li>
+                            <li><a href="">Software Development</a></li>
+                            <li><a href="">Ecommerce</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sitemap">
+                    <h4>Site Map</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1>Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by
+                Colorlib</h1>
+        </div>
+    </footer>
+
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>
