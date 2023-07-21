@@ -18,11 +18,13 @@ $(document).ready(function () {
 
 })
 
+
+
 function headerScroll() {
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        if (scrollPosition > 300) {
+        if (scrollPosition > 400) {
             header.style.position = "fixed";
             header.style.width = "100%";
         } else {
@@ -31,6 +33,10 @@ function headerScroll() {
         }
     });
 }
+
+headerScroll();
+
+
 
 
 var counter = 1;
@@ -41,6 +47,12 @@ setInterval(function () {
         counter = 1;
     }
 }, 3000);
+
+
+
+
+
+
 
 
 
@@ -130,3 +142,20 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 // bestsellingbooksever js end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+const backtoTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backtoTop.classList.add("active");
+    } else {
+        backtoTop.classList.remove("active")
+    }
+})

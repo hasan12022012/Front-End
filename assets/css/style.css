@@ -11,9 +11,13 @@
     margin: auto;
 }
 
+
+
 /* header css start/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 header {
     background: #FEF4F4;
+    z-index: 990;
+    top: 0;
 }
 
 header .container .firsthead {
@@ -71,7 +75,7 @@ header .container .firsthead .list ul li {
     text-decoration: none;
 }
 
-header .container .firsthead .list ul .sup{
+header .container .firsthead .list ul .sup {
     position: relative;
 }
 
@@ -86,9 +90,9 @@ header .container .firsthead .list ul li sup {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top:-9px;
-    right:-8px;
-    position:absolute;
+    top: -9px;
+    right: -8px;
+    position: absolute;
 }
 
 
@@ -104,7 +108,7 @@ header .container .firsthead .list ul li a {
     transition: all 0.5s;
 }
 
-header .container .firsthead .list ul li sup:hover{
+header .container .firsthead .list ul li sup:hover {
     transform: translateY(-0.2rem);
 }
 
@@ -197,6 +201,18 @@ header .container .secondhead nav ul li a:hover {
 
 
 /* image slider css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* @keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
 .imageslider .container .slider {
     width: 1296px;
     height: 580px;
@@ -208,6 +224,96 @@ header .container .secondhead nav ul li a:hover {
     height: 700px;
     display: flex;
 }
+
+.imageslider .container .slider .slides .slide{
+    position: relative;
+}
+
+.imageslider .container .slider .slides .slide  .slide-text {
+    position: absolute;
+    text-align: center;
+    top:42%;
+    left:51%;
+    transform:translate(-50%,-50%);
+    /* animation: slide-down .9s ease-in-out; */
+}
+
+.imageslider .container .slider .slides .slide  .slide-text .img-slide-title{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 34px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: "Playfair Display",serif;
+}
+
+
+
+.imageslider .container .slider .slides .slide .slide-text span{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    display: inline-block;
+    background: #fff;
+    padding: 6px 17px;
+    border-radius: 17px;
+}
+
+
+.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn {
+    width: 185px;
+    height: 58px;
+    border-radius: 35px;
+    background-color: #FF1616;
+    border: none;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    overflow: hidden;
+}
+
+.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    background: #d00101;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn::before {
+    transform: scaleX(0);
+}
+
+.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
 
 .imageslider .container .slider .slides input {
     display: none;
@@ -589,7 +695,7 @@ header .container .secondhead nav ul li a:hover {
 }
 
 .featuredthisweek .container .detailscard {
-    width: 966px; 
+    width: 966px;
     height: 485px;
     background-color: red;
 }
@@ -707,19 +813,20 @@ header .container .secondhead nav ul li a:hover {
     transform: scaleY(1);
 }
 
-.featuredthisweek .container .flex-of-cards-book{
+.featuredthisweek .container .flex-of-cards-book {
     display: flex;
     justify-content: space-between;
 }
 
 .featuredthisweek .container .flex-of-cards-book .thehistoryofphipino img {
-   position: relative;
-   bottom:90px;
+    position: relative;
+    bottom: 90px;
 }
 
-.featuredthisweek .container .listofdetailscard{
+.featuredthisweek .container .listofdetailscard {
     width: 968px;
 }
+
 /* featuredthisweek css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -1317,7 +1424,7 @@ footer .container .lastpart .socialmedia ul li .ytube {
     height: 40px;
 }
 
-footer .container .lastpart .bookcategory{
+footer .container .lastpart .bookcategory {
     margin-left: 170px;
 }
 
@@ -1379,8 +1486,8 @@ footer .container .lastpart .sitemap ul li a {
     text-decoration: underline transparent;
 }
 
-footer .container h1{
-    font-family: "Roboto",sans-serif;
+footer .container h1 {
+    font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -1390,3 +1497,33 @@ footer .container h1{
 
 /* footer css end //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+
+
+
+.back-to-top {
+    background: #FF1616;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+    transition: all .4s;
+}
+
+.back-to-top i {
+    color: white;
+    margin-left: 4px;
+}
+
+.back-to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+/* part2body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part2body .container .blogdetailsection {
+    background-image: url(../img/aboutpic.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.part2body .container .blogdetailsection h2 {
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    padding-top: 130px;
+}
+
+/* part2body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.part3body {
+    margin-top: 100px;
+}
+
+.part3body .container .post-section .post-list {
+    width: 856px;
+}
+
+.part3body .container .post-section .post-list .single-post {
+    border-bottom: 1px solid #999999;
+}
+
+.part3body .container .post-section .post-list .single-post .single-post-img img{
+    width: 100%;
+}
+
+.part3body .container .post-section .post-list .single-post h2{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Playfair Display",serif;
+    font-weight: 600;
+}
+
+
+
+
+.part3body .container .post-section .post-list .single-post .post-info-link {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    margin-bottom: 25px;
+}
+
+.part3body .container .post-section .post-list .single-post .post-info-link .travel-lifestyle a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.part3body .container .post-section .post-list .single-post .post-info-link .travel-lifestyle a:hover {
+    color: #FF1616;
+}
+
+.part3body .container .post-section .post-list .single-post .post-info-link .v_line {
+    border-left: 2px solid black;
+    height: 15px;
+}
+
+.part3body .container .post-section .post-list .single-post .post-info-link .comments a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.part3body .container .post-section .post-list .single-post .post-info-link a:hover {
+    color: #FF1616;
+}
+
+.part3body .container .post-section .post-list .single-post p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    color: #301A22;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.part3body .container .post-section .post-list .single-post .quote-wrapper {
+    height: 220px;
+    padding: 30px;
+    background: rgba(130,139,178,0.1);
+   line-height: 1.733;
+    color: #888888;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.part3body .container .post-section .post-list .single-post .quote-wrapper .quotes{
+    padding: 25px 25px 25px 30px;
+    background: #fff;
+    border-left: 2px solid;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}

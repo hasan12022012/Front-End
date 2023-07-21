@@ -279,7 +279,7 @@
     justify-content: end;
     margin-top: 30px;
     border-bottom: 1px solid #eeeeee;
-    
+
 }
 
 .part3body .container .shipping h5 {
@@ -300,8 +300,8 @@
     accent-color: red;
 }
 
-.part3body .container .shipping .shipping-box ul li input{
-   margin-left: 10px;
+.part3body .container .shipping .shipping-box ul li input {
+    margin-left: 10px;
 }
 
 
@@ -314,6 +314,8 @@
 .part3body .container .shipping .shipping-box .country-menu {
     width: 309px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
 }
 
 .part3body .container .shipping .shipping-box .country-menu .country-btn {
@@ -343,10 +345,12 @@
 }
 
 .part3body .container .shipping .shipping-box .country-menu .countries {
-    position: relative;
+    position: absolute;
     margin-top: 10px;
     border: 1px solid #eeeeee;
     display: none;
+    width: 100%;
+    background-color: white;
 }
 
 .part3body .container .shipping .shipping-box .country-menu.active .countries {
@@ -355,7 +359,7 @@
 
 .part3body .container .shipping .shipping-box .country-menu .countries .country {
     display: flex;
-    height: 35px;
+    height: 45px;
     cursor: pointer;
     padding: 0 16px;
     align-items: center;
@@ -377,6 +381,7 @@
 .part3body .container .shipping .shipping-box .state-menu {
     width: 309px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .part3body .container .shipping .shipping-box .state-menu .select-btn {
@@ -405,10 +410,13 @@
 }
 
 .part3body .container .shipping .shipping-box .state-menu .options {
-    position: relative;
+    position: absolute;
     margin-top: 10px;
     border: 1px solid #eeeeee;
     display: none;
+    width: 100%;
+    background: white;
+    z-index: 100;
 }
 
 .part3body .container .shipping .shipping-box .state-menu.active .options {
@@ -417,7 +425,7 @@
 
 .part3body .container .shipping .shipping-box .state-menu .options .option {
     display: flex;
-    height: 35px;
+    height: 45px;
     cursor: pointer;
     padding: 0 16px;
     align-items: center;
@@ -434,7 +442,7 @@
 }
 
 
-.part3body .container .shipping .shipping-box .postcode input{
+.part3body .container .shipping .shipping-box .postcode input {
     display: block;
     width: 100%;
     background: #f4f4f4;
@@ -514,7 +522,7 @@
 }
 
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn{
+.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn {
     width: 200px;
     height: 45px;
     border-radius: 35px;
@@ -562,7 +570,7 @@
 
 
 
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn{
+.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn {
     width: 200px;
     height: 45px;
     border-radius: 35px;
@@ -575,7 +583,7 @@
     overflow: hidden;
 }
 
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn h1{
+.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -605,4 +613,5 @@
 .part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn:hover::before {
     transform: scaleX(1);
 }
+
 /* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
