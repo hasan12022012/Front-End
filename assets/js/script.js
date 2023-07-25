@@ -19,6 +19,24 @@ $(document).ready(function () {
 })
 
 
+// back-to-top js start///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var btn = $('#back-to-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+// back-to-top js end///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 function headerScroll() {
     window.addEventListener("scroll", function () {
@@ -38,7 +56,7 @@ headerScroll();
 
 
 
-
+// image slider js start////////////////////////////////////////////////////////////////////////////////////
 var counter = 1;
 setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
@@ -47,7 +65,7 @@ setInterval(function () {
         counter = 1;
     }
 }, 3000);
-
+// image slider js end////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -150,12 +168,5 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 
 
-const backtoTop = document.querySelector(".back-to-top");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        backtoTop.classList.add("active");
-    } else {
-        backtoTop.classList.remove("active")
-    }
-})
+

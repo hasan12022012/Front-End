@@ -4,6 +4,30 @@ $(document).ready(function () {
     });
 });
 
+
+
+// back-to-top js start///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var btn = $('#back-to-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+// back-to-top js end///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 // filterbyprice start/////////////////////////////////////////////////////////////////////////////////////
 const range = document.querySelectorAll(".range-slider span input");
 progress = document.querySelector(".range-slider .progress");
