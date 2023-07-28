@@ -14,3 +14,29 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 // back-to-top js end///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+function headerScroll() {
+  window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition > 400) {
+          header.style.position = "fixed";
+          header.style.width = "100%";
+      } else {
+          header.style.position = "static";
+          header.style.width = "auto";
+      }
+  });
+}
+
+headerScroll();

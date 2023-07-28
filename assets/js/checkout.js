@@ -57,3 +57,27 @@ districts.forEach(districtlist => {
 
 }) 
 // district end///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+function headerScroll() {
+  window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition > 400) {
+          header.style.position = "fixed";
+          header.style.width = "100%";
+      } else {
+          header.style.position = "static";
+          header.style.width = "auto";
+      }
+  });
+}
+
+headerScroll();

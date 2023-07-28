@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -135,9 +136,9 @@
     color: gray;
     border: 1px solid gray;
     border-radius: 5px 5px 5px 5px;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,16 +147,18 @@
 .part4body .container .part4bodycontent .contactus .address h1 {
     position: relative;
     bottom: 45px;
-    left: 90px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    left: 80px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
 }
 
 .part4body .container .part4bodycontent .contactus .address p {
     position: relative;
     bottom: 42px;
-    left: 90px;
+    left: 80px;
     font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     color: #8a8a8a;
 }
@@ -165,9 +168,9 @@
     color: gray;
     border: 1px solid gray;
     border-radius: 5px 5px 5px 5px;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,15 +179,18 @@
 .part4body .container .part4bodycontent .contactus .email h1 {
     position: relative;
     bottom: 45px;
-    left: 90px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    left: 80px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
 }
 
 .part4body .container .part4bodycontent .contactus .email p {
     position: relative;
     bottom: 42px;
-    left: 90px;
+    left: 80px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     color: #8a8a8a;
 }
@@ -194,9 +200,9 @@
     color: gray;
     border: 1px solid gray;
     border-radius: 5px 5px 5px 5px;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,15 +211,18 @@
 .part4body .container .part4bodycontent .contactus .phone h1 {
     position: relative;
     bottom: 45px;
-    left: 90px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    left: 80px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
 }
 
 .part4body .container .part4bodycontent .contactus .phone p {
     position: relative;
     bottom: 42px;
-    left: 90px;
+    left: 80px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     color: #8a8a8a;
 }

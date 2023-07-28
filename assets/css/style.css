@@ -201,18 +201,6 @@ header .container .secondhead nav ul li a:hover {
 
 
 /* image slider css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* @keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-} */
-
 .imageslider .container .slider {
     width: 1296px;
     height: 580px;

@@ -56,26 +56,27 @@ range.forEach((input) => {
 // filterbyprice end/////////////////////////////////////////////////////////////////////////////////////
 
 
-// function filterCategoryDisplay() {
-//     let categoryClose = document.querySelector('.shopfiltercategoriestitle--close');
-//     let categoryDisplay = document.querySelector('.shopfiltercategoriesdisplay');
-//     const categoriesCloseIcon = categoryClose.children;
 
 
-//     categoryClose.addEventListener('click', function () {
-//         if (categoryDisplay.classList.contains('display-c-active')) {
-//             for (let i = 0; i < categoriesCloseIcon.length; i++) {
-//                 const categoryCloseIcon = categoriesCloseIcon[i];
-//                 categoryCloseIcon.style.transform = 'rotate(0deg)';
-//             }
-//             categoryDisplay.classList.remove('display-c-active');
-//         } else {
-//             for (let i = 0; i < categoriesCloseIcon.length; i++) {
-//                 const categoryCloseIcon = categoriesCloseIcon[i];
-//                 categoryCloseIcon.style.transform = 'rotate(180deg)';
-//                 categoriesCloseIcon.style.transform = 'all 0.6s'
-//             }
-//             categoryDisplay.classList.add('display-c-active');
-//         }
-//     })
-// }
+
+
+
+
+
+
+
+function headerScroll() {
+  window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition > 400) {
+          header.style.position = "fixed";
+          header.style.width = "100%";
+      } else {
+          header.style.position = "static";
+          header.style.width = "auto";
+      }
+  });
+}
+
+headerScroll();

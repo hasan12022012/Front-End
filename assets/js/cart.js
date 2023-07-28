@@ -21,6 +21,35 @@ btn.on('click', function(e) {
 
 
 
+
+function headerScroll() {
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        if (scrollPosition > 400) {
+            header.style.position = "fixed";
+            header.style.width = "100%";
+        } else {
+            header.style.position = "static";
+            header.style.width = "auto";
+        }
+    });
+}
+
+headerScroll();
+
+
+
+
+
+
+
+
+
+
+
+
+
 function incrementValue()
 {
     var value = parseInt(document.getElementById('number').value, 10);
