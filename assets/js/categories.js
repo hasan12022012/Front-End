@@ -1,25 +1,66 @@
-$(document).ready(function () {
-    $(".filterbyrating").click(function () {
-        $("#list").slideToggle("slow");
-    });
-});
+// filterbyrating js start////////////////////////////////////////////////////////////////////////////////////
+const optionMenu = document.querySelector(".filterbyrating"),
+    selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+options.forEach(option => {
+    option.addEventListener("click", () => {
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+        optionMenu.classList.remove("active")
+    })
+
+})
+// filterbyrating js end////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+// district start///////////////////////////////////////////////////////////////////////////////////////
+const browseMenu = document.querySelector(".browse-by-popularity"),
+    browseBtn = browseMenu.querySelector(".browse-by-popularity-btn"),
+    browseList = browseMenu.querySelectorAll(".browse_list"),
+    sBrowse_text = browseMenu.querySelector(".sBrowse-by-popularity-btn-text");
+
+browseBtn.addEventListener("click", () => browseMenu.classList.toggle("active"));
+
+browseList.forEach(browse_list => {
+    browse_list.addEventListener("click", () => {
+        let selectedDistrict = browse_list.querySelector(".browse-text").innerText;
+        sBrowse_text.innerText = selectedDistrict;
+        browseMenu.classList.remove("active")
+    })
+
+})
+// district end///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 
 // back-to-top js start///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var btn = $('#back-to-top');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
 });
 // back-to-top js end///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -66,17 +107,17 @@ range.forEach((input) => {
 
 
 function headerScroll() {
-  window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-      if (scrollPosition > 400) {
-          header.style.position = "fixed";
-          header.style.width = "100%";
-      } else {
-          header.style.position = "static";
-          header.style.width = "auto";
-      }
-  });
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        if (scrollPosition > 400) {
+            header.style.position = "fixed";
+            header.style.width = "100%";
+        } else {
+            header.style.position = "static";
+            header.style.width = "auto";
+        }
+    });
 }
 
 headerScroll();

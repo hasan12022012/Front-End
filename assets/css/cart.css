@@ -149,112 +149,6 @@
 
 
 
-
-.part3body .container .update-close {
-    margin-top: 30px;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 30px;
-}
-
-
-.part3body .container .update-close .update .update-btn {
-    width: 150px;
-    height: 45px;
-    border-radius: 35px;
-    background-color: #FF1616;
-    border: none;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    overflow: hidden;
-}
-
-.part3body .container .update-close .update .update-btn h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.part3body .container .update-close .update .update-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 35px;
-    width: 100%;
-    height: 100%;
-    background: #d00101;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-
-.part3body .container .update-close .update .update-btn::before {
-    transform: scaleX(0);
-}
-
-.part3body .container .update-close .update .update-btn:hover::before {
-    transform: scaleX(1);
-}
-
-
-
-
-.part3body .container .update-close .close {
-    margin-left: 630px;
-}
-
-.part3body .container .update-close .close .close-btn {
-    width: 150px;
-    height: 45px;
-    border-radius: 35px;
-    background-color: #FF1616;
-    border: none;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    overflow: hidden;
-}
-
-.part3body .container .update-close .close .close-btn h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.part3body .container .update-close .close .close-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 35px;
-    width: 100%;
-    height: 100%;
-    background: #d00101;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-
-.part3body .container .update-close .close .close-btn::before {
-    transform: scaleX(0);
-}
-
-.part3body .container .update-close .close .close-btn:hover::before {
-    transform: scaleX(1);
-}
-
-
-
-
 .part3body .container .subtotal {
     display: flex;
     justify-content: end;
@@ -274,255 +168,13 @@
     margin-bottom: 0px;
 }
 
-.part3body .container .shipping {
-    display: flex;
-    justify-content: end;
-    margin-top: 30px;
-    border-bottom: 1px solid #eeeeee;
 
-}
-
-.part3body .container .shipping h5 {
-    font-size: 14px;
-    color: #2a2a2a;
-    font-family: "Roboto", sans-serif;
-    margin-right: -82px;
-}
-
-
-.part3body .container .shipping .shipping-box ul li {
-    list-style-type: none;
-    margin-bottom: 15px;
-    color: #606060;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    text-align: end;
-    accent-color: red;
-}
-
-.part3body .container .shipping .shipping-box ul li input {
-    margin-left: 10px;
-}
-
-
-
-
-
-
-
-
-.part3body .container .shipping .shipping-box .country-menu {
-    width: 309px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 100;
-}
-
-.part3body .container .shipping .shipping-box .country-menu .country-btn {
-    display: flex;
-    height: 45px;
-    padding: 20px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #2a2a2a;
-    background: #F4F4F4;
-    border: 1px solid #eeeeee;
-    border-radius: 35px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.part3body .container .shipping .shipping-box .country-menu .country-btn i {
-    font-size: 15px;
-    color: black;
-    transition: 0.3s;
-}
-
-.part3body .container .shipping .shipping-box .country-menu.active .country-btn i {
-    transform: rotate(-180deg);
-}
-
-.part3body .container .shipping .shipping-box .country-menu .countries {
-    position: absolute;
-    margin-top: 10px;
-    border: 1px solid #eeeeee;
-    display: none;
-    width: 100%;
-    background-color: white;
-}
-
-.part3body .container .shipping .shipping-box .country-menu.active .countries {
-    display: block;
-}
-
-.part3body .container .shipping .shipping-box .country-menu .countries .country {
-    display: flex;
-    height: 45px;
-    cursor: pointer;
-    padding: 0 16px;
-    align-items: center;
-}
-
-.part3body .container .shipping .shipping-box .country-menu .countries .country:hover {
-    background: #F4F4F4;
-}
-
-.part3body .container .shipping .shipping-box .country-menu .countries .country .country-text {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
-
-
-
-.part3body .container .shipping .shipping-box .state-menu {
-    width: 309px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.part3body .container .shipping .shipping-box .state-menu .select-btn {
-    display: flex;
-    height: 45px;
-    padding: 20px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    background: #F4F4F4;
-    border: 1px solid #eeeeee;
-    border-radius: 35px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.part3body .container .shipping .shipping-box .state-menu .select-btn i {
-    font-size: 15px;
-    color: black;
-    transition: 0.3s;
-}
-
-.part3body .container .shipping .shipping-box .state-menu.active .select-btn i {
-    transform: rotate(-180deg);
-}
-
-.part3body .container .shipping .shipping-box .state-menu .options {
-    position: absolute;
-    margin-top: 10px;
-    border: 1px solid #eeeeee;
-    display: none;
-    width: 100%;
-    background: white;
-    z-index: 100;
-}
-
-.part3body .container .shipping .shipping-box .state-menu.active .options {
-    display: block;
-}
-
-.part3body .container .shipping .shipping-box .state-menu .options .option {
-    display: flex;
-    height: 45px;
-    cursor: pointer;
-    padding: 0 16px;
-    align-items: center;
-}
-
-.part3body .container .shipping .shipping-box .state-menu .options .option:hover {
-    background: #F4F4F4;
-}
-
-.part3body .container .shipping .shipping-box .state-menu .options .option .option-text {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
-
-.part3body .container .shipping .shipping-box .postcode input {
-    display: block;
-    width: 100%;
-    background: #f4f4f4;
-    border: 1px solid #f4f4f4;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 8px 15px;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    outline: none;
-}
-
-
-
-
-
-.part3body .container .shipping .shipping-box .update-details {
-    margin-top: 20px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: end;
-}
-
-
-.part3body .container .shipping .shipping-box .update-details .updatedetails .updatedetails-btn {
-    width: 150px;
-    height: 45px;
-    border-radius: 35px;
-    background-color: #FF1616;
-    border: none;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    overflow: hidden;
-}
-
-.part3body .container .shipping .shipping-box .update-details .updatedetails .updatedetails-btn h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.part3body .container .shipping .shipping-box .update-details .updatedetails .updatedetails-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 35px;
-    width: 100%;
-    height: 100%;
-    background: #d00101;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-
-.part3body .container .shipping .shipping-box .update-details .updatedetails .updatedetails-btn::before {
-    transform: scaleX(0);
-}
-
-.part3body .container .shipping .shipping-box .update-details .updatedetails .updatedetails-btn:hover::before {
-    transform: scaleX(1);
-}
-
-
-
-
-
-
-
-.part3body .container .continue-proceed {
+.part3body .container .continue{
     margin-top: 20px;
 }
 
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn {
+.part3body .container .continue .continue-shopping .continue-shopping-btn {
     width: 200px;
     height: 45px;
     border-radius: 35px;
@@ -535,7 +187,7 @@
     overflow: hidden;
 }
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn h1 {
+.part3body .container .continue .continue-shopping .continue-shopping-btn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -544,7 +196,7 @@
     z-index: 1;
 }
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn::before {
+.part3body .container .continue .continue-shopping .continue-shopping-btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -558,62 +210,13 @@
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn::before {
+.part3body .container .continue .continue-shopping .continue-shopping-btn::before {
     transform: scaleX(0);
 }
 
-.part3body .container .continue-proceed .continue-shopping .continue-shopping-btn:hover::before {
+.part3body .container .continue .continue-shopping .continue-shopping-btn:hover::before {
     transform: scaleX(1);
 }
-
-
-
-
-
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn {
-    width: 200px;
-    height: 45px;
-    border-radius: 35px;
-    background-color: #FF1616;
-    border: none;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    overflow: hidden;
-}
-
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 35px;
-    width: 100%;
-    height: 100%;
-    background: #d00101;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn::before {
-    transform: scaleX(0);
-}
-
-.part3body .container .continue-proceed .proceed-checkout .proceed-checkout-btn:hover::before {
-    transform: scaleX(1);
-}
-
 /* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
