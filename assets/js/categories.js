@@ -31,8 +31,8 @@ browseBtn.addEventListener("click", () => browseMenu.classList.toggle("active"))
 
 browseList.forEach(browse_list => {
     browse_list.addEventListener("click", () => {
-        let selectedDistrict = browse_list.querySelector(".browse-text").innerText;
-        sBrowse_text.innerText = selectedDistrict;
+        let selectedBrowseText = browse_list.querySelector(".browse-text").innerText;
+        sBrowse_text.innerText = selectedBrowseText;
         browseMenu.classList.remove("active")
     })
 
