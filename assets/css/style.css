@@ -20,7 +20,7 @@ header {
     top: 0;
 }
 
-header .container .firsthead {
+header .container .head-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,22 +28,22 @@ header .container .firsthead {
 }
 
 
-header .container .firsthead .list ul {
+header .container .head-content .list ul {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-header .container .firsthead .list ul li {
+header .container .head-content .list ul li {
     margin-left: 40px;
     text-decoration: none;
 }
 
-header .container .firsthead .list ul .sup {
+header .container .head-content .list ul .sup {
     position: relative;
 }
 
-header .container .firsthead .list ul li sup {
+header .container .head-content .list ul li sup {
     display: grid;
     place-items: center;
     width: 24px;
@@ -61,7 +61,7 @@ header .container .firsthead .list ul li sup {
 
 
 
-header .container .firsthead .list ul li a {
+header .container .head-content .list ul li a {
     text-decoration: none;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -72,15 +72,15 @@ header .container .firsthead .list ul li a {
     transition: all 0.5s;
 }
 
-header .container .firsthead .list ul li sup:hover {
+header .container .head-content .list ul li sup:hover {
     transform: translateY(-0.2rem);
 }
 
-header .container .firsthead .list ul li a:hover {
+header .container .head-content .list ul li a:hover {
     color: red;
 }
 
-header .container .firsthead .list ul li a button {
+header .container .head-content .list ul li a button {
     width: 120px;
     height: 50px;
     border-radius: 35px;
@@ -93,7 +93,7 @@ header .container .firsthead .list ul li a button {
     overflow: hidden;
 }
 
-header .container .firsthead .list ul li a .signinbtn h1 {
+header .container .head-content .list ul li a .signinbtn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -102,7 +102,7 @@ header .container .firsthead .list ul li a .signinbtn h1 {
     z-index: 1;
 }
 
-header .container .firsthead .list ul li a button::before {
+header .container .head-content .list ul li a button::before {
     content: "";
     position: absolute;
     left: 0;
@@ -116,25 +116,25 @@ header .container .firsthead .list ul li a button::before {
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-header .container .firsthead .list ul li a button::before {
+header .container .head-content .list ul li a button::before {
     transform: scaleX(0);
 }
 
-header .container .firsthead .list ul li a button:hover::before {
+header .container .head-content .list ul li a button:hover::before {
     transform: scaleX(1);
 }
 
-header .container .firsthead .secondhead nav ul {
+header .container .head-content .nav-content nav ul {
     text-align: center;
     list-style-type: none;
 }
 
-header .container .firsthead .secondhead nav ul li {
+header .container .head-content .nav-content nav ul li {
     display: inline-block;
     margin-left: 15px;
 }
 
-header .container .firsthead .secondhead nav ul li a {
+header .container .head-content .nav-content nav ul li a {
     text-decoration: none;
     padding: 15px 17px;
     font-size: 16px;
@@ -145,7 +145,7 @@ header .container .firsthead .secondhead nav ul li a {
     display: block;
 }
 
-header .container .firsthead .secondhead nav ul li a:hover {
+header .container .head-content .nav-content nav ul li a:hover {
     color: red;
 }
 
@@ -166,13 +166,14 @@ header .container .firsthead .secondhead nav ul li a:hover {
 
 /* image slider css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .imageslider .container .slider {
-    width: 1296px;
+    width: 1320px;
     height: 580px;
     overflow: hidden;
+    position: relative;
 }
 
 .imageslider .container .slider .slides {
-    width: 1296px;
+    width: 1320px;
     height: 700px;
     display: flex;
 }
@@ -272,12 +273,12 @@ header .container .firsthead .secondhead nav ul li a:hover {
 }
 
 .imageslider .container .slider .slide {
-    width: 1296px;
+    width: 1320px;
     transition: 2s;
 }
 
 .imageslider .container .slider .slide img {
-    width: 1296px;
+    width: 1320px;
     height: 580px;
 }
 
@@ -286,10 +287,10 @@ header .container .firsthead .secondhead nav ul li a:hover {
 .imageslider .container .slider .navigation-manual {
     position: absolute;
     width: 800px;
-    bottom: 60px;
+    bottom: 20px;
     display: flex;
     justify-content: center;
-    left: 380px;
+    left: 275px;
 }
 
 .imageslider .container .slider .navigation-manual .manual-btn {
@@ -327,8 +328,8 @@ header .container .firsthead .secondhead nav ul li a:hover {
     display: flex;
     width: 800px;
     justify-content: center;
-    bottom: 67px;
-    left: 380px;
+    bottom: 27px;
+    left: 275px;
 }
 
 .imageslider .container .slider .slides .navigation-auto div {
