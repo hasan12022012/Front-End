@@ -12,7 +12,7 @@
 }
 
 /* part2body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.part2body .container .aboutsection{
+.slider-area .container .aboutsection{
     background-image: url(../img/aboutbook.avif);
     height: 350px;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
     background-size: cover;
 }
 
-.part2body .container .aboutsection h2{
+.slider-area .container .aboutsection h2{
     color: #fff;
     font-size: 50px;
     display: block;
@@ -36,13 +36,13 @@
 
 
 /* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.part3body .container .ourstory{
+.story-goal-section .container .ourstory{
     align-items: center;
     width: 960px;
     margin-left: 100px;
 }
 
-.part3body .container .ourstory h2{
+.story-goal-section .container .ourstory h2{
     font-size: 30px;
     display: block;
     font-weight: 700;
@@ -52,7 +52,7 @@
 
 }
 
-.part3body .container .ourstory p{
+.story-goal-section .container .ourstory p{
     font-family: "Roboto",sans-serif;
     color: #301A22;
     font-size: 16px;
@@ -63,14 +63,14 @@
 }
 
 
-.part3body .container .ourgoal{
+.story-goal-section .container .ourgoal{
     align-items: center;
     width: 960px;
     margin-left: 100px;
     margin-bottom: 100px;
 }
 
-.part3body .container .ourgoal h2{
+.story-goal-section .container .ourgoal h2{
     font-size: 30px;
     display: block;
     font-weight: 700;
@@ -80,7 +80,7 @@
 
 }
 
-.part3body .container .ourgoal p{
+.story-goal-section .container .ourgoal p{
     font-family: "Roboto",sans-serif;
     color: #301A22;
     font-size: 16px;

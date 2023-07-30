@@ -13,7 +13,7 @@
 }
 
 /* part2body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.part2body .container .contactsection {
+.slider-area .container .contactsection {
     background-image: url(../img/aboutpic.webp);
     height: 350px;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     background-size: cover;
 }
 
-.part2body .container .contactsection h2 {
+.slider-area .container .contactsection h2 {
     color: #fff;
     font-size: 50px;
     display: block;
@@ -38,7 +38,7 @@
 
 
 /* part3body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.prt3body{
+.iframe-section{
     padding-top: 30px;
 }
 /* part3body css end//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -48,18 +48,18 @@
 
 
 /* part4body css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.part4body .container .part4bodycontent .getintouch {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch {
     display: flex;
     justify-content: space-between;
 }
 
-.part4body .container .part4bodycontent .getintouch form h2 {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form h2 {
     font-size: 27px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.part4body .container .part4bodycontent .getintouch form textarea {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form textarea {
     width: 850px !important;
     height: 175px !important;
     outline: none;
@@ -71,7 +71,7 @@
     margin-bottom: 19px;
 }
 
-.part4body .container .part4bodycontent .getintouch form div input {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form div input {
     height: 48px;
     outline: none;
     padding-left: 18px;
@@ -81,11 +81,11 @@
     width: 414px;
 }
 
-.part4body .container .part4bodycontent .getintouch form div #entermail {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form div #entermail {
     margin-left: 19px;
 }
 
-.part4body .container .part4bodycontent .getintouch form #subject {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form #subject {
     height: 48px;
     outline: none;
     padding-left: 18px;
@@ -96,7 +96,7 @@
     margin-top: 19px;
 }
 
-.part4body .container .part4bodycontent .getintouch form .send button {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form .send button {
     background: #fff;
     color: #FF1616 !important;
     display: inline-block;
@@ -111,7 +111,7 @@
     margin-top: 50px;
 }
 
-.part4body .container .part4bodycontent .getintouch form .send button:hover {
+.get-in-touch-section .container .get-in-touch-section-content .getintouch form .send button:hover {
     background: #FF1616;
     color: #fff !important;
     border: 1px solid #FF1616;
@@ -122,7 +122,7 @@
 
 
 
-.part4body .container .part4bodycontent .contactus {
+.get-in-touch-section .container .get-in-touch-section-content .contactus {
     border-radius: 5px 5px 5px 5px;
     width: 330px;
     padding-top: 19px;
@@ -130,7 +130,7 @@
 
 
 
-.part4body .container .part4bodycontent .contactus .address i {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .address i {
     margin-top: 35px;
     margin-left: 25px;
     color: gray;
@@ -144,7 +144,7 @@
     justify-content: center;
 }
 
-.part4body .container .part4bodycontent .contactus .address h1 {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .address h1 {
     position: relative;
     bottom: 45px;
     left: 80px;
@@ -152,7 +152,7 @@
     font-size: 16px;
 }
 
-.part4body .container .part4bodycontent .contactus .address p {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .address p {
     position: relative;
     bottom: 42px;
     left: 80px;
@@ -163,7 +163,7 @@
     color: #8a8a8a;
 }
 
-.part4body .container .part4bodycontent .contactus .email i {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .email i {
     margin-left: 25px;
     color: gray;
     border: 1px solid gray;
@@ -176,7 +176,7 @@
     justify-content: center;
 }
 
-.part4body .container .part4bodycontent .contactus .email h1 {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .email h1 {
     position: relative;
     bottom: 45px;
     left: 80px;
@@ -184,7 +184,7 @@
     font-size: 16px;
 }
 
-.part4body .container .part4bodycontent .contactus .email p {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .email p {
     position: relative;
     bottom: 42px;
     left: 80px;
@@ -195,7 +195,7 @@
     color: #8a8a8a;
 }
 
-.part4body .container .part4bodycontent .contactus .phone i {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .phone i {
     margin-left: 25px;
     color: gray;
     border: 1px solid gray;
@@ -208,7 +208,7 @@
     justify-content: center;
 }
 
-.part4body .container .part4bodycontent .contactus .phone h1 {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .phone h1 {
     position: relative;
     bottom: 45px;
     left: 80px;
@@ -216,7 +216,7 @@
     font-size: 16px;
 }
 
-.part4body .container .part4bodycontent .contactus .phone p {
+.get-in-touch-section .container .get-in-touch-section-content .contactus .phone p {
     position: relative;
     bottom: 42px;
     left: 80px;

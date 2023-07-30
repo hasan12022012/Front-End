@@ -14,7 +14,7 @@
 
 
 /* part2body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.part2body .container .cartsection {
+.slider-area .container .cartsection {
     background-image: url(../img/aboutpic.webp);
     height: 350px;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
     background-size: cover;
 }
 
-.part2body .container .cartsection h2 {
+.slider-area .container .cartsection h2 {
     color: #fff;
     font-size: 50px;
     font-family: "Playfair Display", serif;
@@ -41,37 +41,37 @@
 
 
 /* part3body css start ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.part3body {
+.cart-section-area {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.part3body .container .title-of-product {
+.cart-section-area .container .title-of-product {
     display: flex;
     justify-content: space-between;
 }
 
-.part3body .container .title-of-product .price-quantity-total {
+.cart-section-area .container .title-of-product .price-quantity-total {
     width: 444px;
     display: flex;
     justify-content: space-between;
 }
 
-.part3body .container .title-of-product .product h4 {
+.cart-section-area .container .title-of-product .product h4 {
     font-size: 14px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     color: #797979;
 }
 
-.part3body .container .title-of-product .price-quantity-total h4 {
+.cart-section-area .container .title-of-product .price-quantity-total h4 {
     font-size: 14px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     color: #797979;
 }
 
-.part3body .container .about-of-product {
+.cart-section-area .container .about-of-product {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,17 +80,17 @@
     padding-bottom: 30px;
 }
 
-.part3body .container .about-of-product .img-of-product {
+.cart-section-area .container .about-of-product .img-of-product {
     display: flex;
     align-items: center;
 }
 
-.part3body .container .about-of-product .img-of-product img {
+.cart-section-area .container .about-of-product .img-of-product img {
     width: 150px;
     border-radius: 3px;
 }
 
-.part3body .container .about-of-product .img-of-product h3 {
+.cart-section-area .container .about-of-product .img-of-product h3 {
     font-family: "Roboto", sans-serif;
     color: #301A22;
     font-size: 16px;
@@ -102,25 +102,25 @@
 
 
 
-.part3body .container .about-of-product .price-of-product {
+.cart-section-area .container .about-of-product .price-of-product {
     display: flex;
     justify-content: space-between;
     width: 444px;
 }
 
-.part3body .container .about-of-product .price-of-product h4 {
+.cart-section-area .container .about-of-product .price-of-product h4 {
     font-size: 14px;
     color: #2a2a2a;
     font-family: "Roboto", sans-serif;
 }
 
-.part3body .container .about-of-product .price-of-product .quantity-product {
+.cart-section-area .container .about-of-product .price-of-product .quantity-product {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.part3body .container .about-of-product .price-of-product .quantity-product .dcrbtn {
+.cart-section-area .container .about-of-product .price-of-product .quantity-product .dcrbtn {
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -128,7 +128,7 @@
     border: 1px solid #eeeeee;
 }
 
-.part3body .container .about-of-product .price-of-product .quantity-product .incbtn {
+.cart-section-area .container .about-of-product .price-of-product .quantity-product .incbtn {
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -136,7 +136,7 @@
     border: 1px solid #eeeeee;
 }
 
-.part3body .container .about-of-product .price-of-product .quantity-product .number {
+.cart-section-area .container .about-of-product .price-of-product .quantity-product .number {
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -149,7 +149,7 @@
 
 
 
-.part3body .container .subtotal {
+.cart-section-area .container .subtotal {
     display: flex;
     justify-content: end;
     margin-top: 30px;
@@ -157,11 +157,11 @@
     padding-bottom: 30px;
 }
 
-.part3body .container .subtotal .subtotal-price {
+.cart-section-area .container .subtotal .subtotal-price {
     margin-right: 170px;
 }
 
-.part3body .container .subtotal h5 {
+.cart-section-area .container .subtotal h5 {
     font-size: 14px;
     color: #2a2a2a;
     font-family: "Roboto", sans-serif;
@@ -169,12 +169,12 @@
 }
 
 
-.part3body .container .continue{
+.cart-section-area .container .continue{
     margin-top: 20px;
 }
 
 
-.part3body .container .continue .continue-shopping .continue-shopping-btn {
+.cart-section-area .container .continue .continue-shopping .continue-shopping-btn {
     width: 200px;
     height: 45px;
     border-radius: 35px;
@@ -187,7 +187,7 @@
     overflow: hidden;
 }
 
-.part3body .container .continue .continue-shopping .continue-shopping-btn h1 {
+.cart-section-area .container .continue .continue-shopping .continue-shopping-btn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -196,7 +196,7 @@
     z-index: 1;
 }
 
-.part3body .container .continue .continue-shopping .continue-shopping-btn::before {
+.cart-section-area .container .continue .continue-shopping .continue-shopping-btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -210,11 +210,11 @@
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-.part3body .container .continue .continue-shopping .continue-shopping-btn::before {
+.cart-section-area .container .continue .continue-shopping .continue-shopping-btn::before {
     transform: scaleX(0);
 }
 
-.part3body .container .continue .continue-shopping .continue-shopping-btn:hover::before {
+.cart-section-area .container .continue .continue-shopping .continue-shopping-btn:hover::before {
     transform: scaleX(1);
 }
 /* part3body css end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
