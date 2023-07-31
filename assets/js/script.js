@@ -22,17 +22,17 @@ $(document).ready(function () {
 // back-to-top js start///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var btn = $('#back-to-top');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
 });
 // back-to-top js end///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -53,22 +53,6 @@ function headerScroll() {
 }
 
 headerScroll();
-
-
-
-// image slider js start////////////////////////////////////////////////////////////////////////////////////
-var counter = 1;
-setInterval(function () {
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if (counter > 3) {
-        counter = 1;
-    }
-}, 3000);
-// image slider js end////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 
 

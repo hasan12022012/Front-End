@@ -165,33 +165,64 @@ header .container .head-content .nav-content nav ul li a:hover {
 
 
 /* image slider css start//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.imageslider .container .slider {
+
+.imageslider .container .slideshow-container {
     width: 1320px;
     height: 580px;
-    overflow: hidden;
     position: relative;
+    margin: auto
 }
 
-.imageslider .container .slider .slides {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides {
+    display: none;
+    height: 400px;
+}
+
+.imageslider .container .slideshow-container .slideshow-inner .mySlides img{
+    width: 1320px;
+    height: 580px;
+}
+
+.imageslider .container .slideshow-container .slideshow-inner {
     width: 1320px;
     height: 700px;
-    display: flex;
 }
 
-.imageslider .container .slider .slides .slide {
-    position: relative;
+
+
+.imageslider .container .slideshow-container .slideshow-inner .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 30px;
+    transition: background-color .6s ease
 }
 
-.imageslider .container .slider .slides .slide .slide-text {
+.imageslider .container .slideshow-container .slideshow-inner .dot.active,
+.dot:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text {
     position: absolute;
     text-align: center;
-    top: 42%;
+    top: 50%;
     left: 51%;
     transform: translate(-50%, -50%);
-    /* animation: slide-down .9s ease-in-out; */
+    transition: all 0.4s;
 }
 
-.imageslider .container .slider .slides .slide .slide-text .img-slide-title {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text .img-slide-title {
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 34px;
@@ -202,7 +233,7 @@ header .container .head-content .nav-content nav ul li a:hover {
 
 
 
-.imageslider .container .slider .slides .slide .slide-text span {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text span {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
@@ -216,7 +247,7 @@ header .container .head-content .nav-content nav ul li a:hover {
 }
 
 
-.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text a .browse-store-btn {
     width: 185px;
     height: 58px;
     border-radius: 35px;
@@ -229,7 +260,7 @@ header .container .head-content .nav-content nav ul li a:hover {
     overflow: hidden;
 }
 
-.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn h1 {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text a .browse-store-btn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -238,7 +269,7 @@ header .container .head-content .nav-content nav ul li a:hover {
     z-index: 1;
 }
 
-.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn::before {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text a .browse-store-btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -252,110 +283,18 @@ header .container .head-content .nav-content nav ul li a:hover {
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn::before {
+
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text a .browse-store-btn::before {
     transform: scaleX(0);
 }
 
-.imageslider .container .slider .slides .slide .slide-text a .browse-store-btn:hover::before {
+.imageslider .container .slideshow-container .slideshow-inner .mySlides .slide-text a .browse-store-btn:hover::before {
     transform: scaleX(1);
 }
 
-
-
-
-
-
-
-
-
-.imageslider .container .slider .slides input {
-    display: none;
-}
-
-.imageslider .container .slider .slide {
-    width: 1320px;
-    transition: 2s;
-}
-
-.imageslider .container .slider .slide img {
-    width: 1320px;
-    height: 580px;
-}
-
-/*css for manual slide navigation*/
-
-.imageslider .container .slider .navigation-manual {
-    position: absolute;
-    width: 800px;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    left: 275px;
-}
-
-.imageslider .container .slider .navigation-manual .manual-btn {
-    border: 1px solid white;
-    padding: 11px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.imageslider .container .slider .navigation-manual .manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.imageslider .container .slider .navigation-manual .manual-btn:hover {
-    background: white;
-}
-
-.imageslider .container .slider .slides #radio1:checked~.first {
-    margin-left: 0;
-}
-
-.imageslider .container .slider .slides #radio2:checked~.first {
-    margin-left: -100%;
-}
-
-.imageslider .container .slider .slides #radio3:checked~.first {
-    margin-left: -200%;
-}
-
-/*css for automatic navigation*/
-
-.imageslider .container .slider .slides .navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    bottom: 27px;
-    left: 275px;
-}
-
-.imageslider .container .slider .slides .navigation-auto div {
-    border: 2px solid white;
-    padding: 3px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.imageslider .container .slider .slides .navigation-auto div:not(:last-child) {
-    margin-right: 55px;
-}
-
-.imageslider .container .slider .slides #radio1:checked~.navigation-auto .auto-btn1 {
-    background: white;
-}
-
-.imageslider .container .slider .slides #radio2:checked~.navigation-auto .auto-btn2 {
-    background: white;
-}
-
-.imageslider .container .slider .slides #radio3:checked~.navigation-auto .auto-btn3 {
-    background: white;
-}
-
 /* image slider css end /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
 
 
