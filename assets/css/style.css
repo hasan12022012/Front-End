@@ -770,34 +770,25 @@ header .container .head-content .nav-content nav ul li a:hover {
     color: white;
 }
 
-.latestpublisheditems .container .tab-content {
-    display: none;
-    background: white;
-    padding: 15px;
-}
 
-.latestpublisheditems .container .tab-content.current {
-    display: inherit;
-}
-
-.latestpublisheditems .container .tab-content .carousel {
+.latestpublisheditems .container .carousel .row {
     display: flex;
     justify-content: space-between;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card {
+.latestpublisheditems .container  .carousel .card {
     border: 1px solid #EEE1E0;
     width: 198px;
     list-style-type: none;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content {
+.latestpublisheditems .container .carousel .card .card_content {
     padding-top: 15px;
     padding-left: 15px;
     background-color: white;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content a {
+.latestpublisheditems .container .carousel .card .card_content a {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -805,7 +796,7 @@ header .container .head-content .nav-content nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content p {
+.latestpublisheditems .container  .carousel .card .card_content p {
     color: #9498A7;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -813,19 +804,19 @@ header .container .head-content .nav-content nav ul li a:hover {
     margin-top: 13px;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text {
+.latestpublisheditems .container  .carousel .card .card_content .card_text {
     display: flex;
     align-items: center;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview i {
+.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview i {
     font-size: 13px;
     color: #FF5700;
     font-weight: 900;
     margin-top: 20px;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview p {
+.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview p {
     color: #9498A7;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -833,17 +824,17 @@ header .container .head-content .nav-content nav ul li a:hover {
     font-weight: 300;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview p span {
+.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview p span {
     color: #FF5700;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .price {
+.latestpublisheditems .container .carousel .card .card_content .card_text .price {
     margin-left: 40px;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .price span {
+.latestpublisheditems .container  .carousel .card .card_content .card_text .price span {
     cursor: pointer;
     font-weight: 500;
     color: #FF1616;
@@ -851,14 +842,14 @@ header .container .head-content .nav-content nav ul li a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card:focus,
-.latestpublisheditems .container .tab-content .carousel .card:hover {
+.latestpublisheditems .container  .carousel .card:focus,
+.latestpublisheditems .container  .carousel .card:hover {
     transform: scale();
     box-shadow: 5px 5px 5px 5px rgba(195, 2, 2, 0.2);
     transition: 0.5s;
 }
 
-.latestpublisheditems .container .tab-content .carousel .card:hover a {
+.latestpublisheditems .container  .carousel .card:hover a {
     color: red;
     transition: 0.5s;
 }
