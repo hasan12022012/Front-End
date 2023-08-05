@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: 1320px;
+    max-width: 1320px;
     margin: auto;
 }
 
@@ -17,7 +17,6 @@
 header {
     background: #FEF4F4;
     z-index: 990;
-    top: 0;
 }
 
 header .container .head-content {
@@ -25,6 +24,22 @@ header .container .head-content {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+}
+
+header .container .head-content .logo {
+    display: flex;
+   align-items: center;
+}
+
+header .container .head-content .logo .responsive-bar {
+    display: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+header .container .head-content .logo .responsive-bar i{
+    font-size: 25px;
+    color: red;
 }
 
 
@@ -58,7 +73,6 @@ header .container .head-content .list ul li sup {
     right: -8px;
     position: absolute;
 }
-
 
 
 header .container .head-content .list ul li a {
@@ -125,6 +139,7 @@ header .container .head-content .list ul li a button:hover::before {
 }
 
 header .container .head-content .nav-content nav ul {
+    display: flex;
     text-align: center;
     list-style-type: none;
 }
@@ -144,6 +159,7 @@ header .container .head-content .nav-content nav ul li a {
     transition: all 0.5s;
     display: block;
 }
+
 
 header .container .head-content .nav-content nav ul li a:hover {
     color: red;
@@ -178,7 +194,7 @@ header .container .head-content .nav-content nav ul li a:hover {
     height: 400px;
 }
 
-.imageslider .container .slideshow-container .slideshow-inner .mySlides img{
+.imageslider .container .slideshow-container .slideshow-inner .mySlides img {
     width: 1320px;
     height: 580px;
 }
@@ -729,12 +745,10 @@ header .container .head-content .nav-content nav ul li a:hover {
 .latestpublisheditems {
     margin-top: 50px;
 }
-
 .latestpublisheditems .container .titletab {
     display: flex;
     justify-content: space-between;
 }
-
 .latestpublisheditems .container .titletab h2 {
     font-size: 30px;
     display: block;
@@ -742,20 +756,17 @@ header .container .head-content .nav-content nav ul li a:hover {
     line-height: 1.4;
     margin-bottom: 22px;
 }
-
 .latestpublisheditems .container .titletab .tabs {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-
 .latestpublisheditems .container .titletab .tabs li {
     background: none;
     color: #222;
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
-
     border: 1px solid #EEE1E0;
     border-radius: 20px;
     font-size: 16px;
@@ -764,102 +775,93 @@ header .container .head-content .nav-content nav ul li a:hover {
     margin-right: 8px;
     font-family: 'Roboto', sans-serif;
 }
-
 .latestpublisheditems .container .titletab .tabs li.current {
     background: red;
     color: white;
 }
-
-
-.latestpublisheditems .container .carousel .row {
+.latestpublisheditems .container .tab-content {
+    display: none;
+    background: white;
+    padding: 15px;
+}
+.latestpublisheditems .container .tab-content.current {
+    display: inherit;
+}
+.latestpublisheditems .container .tab-content .carousel {
     display: flex;
     justify-content: space-between;
 }
-
-.latestpublisheditems .container  .carousel .card {
+.latestpublisheditems .container .tab-content .carousel .card {
     border: 1px solid #EEE1E0;
     width: 198px;
     list-style-type: none;
 }
-
-.latestpublisheditems .container .carousel .card .card_content {
+.latestpublisheditems .container .tab-content .carousel .card .card_content {
     padding-top: 15px;
     padding-left: 15px;
     background-color: white;
 }
-
-.latestpublisheditems .container .carousel .card .card_content a {
+.latestpublisheditems .container .tab-content .carousel .card .card_content a {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     color: black;
     margin-bottom: 15px;
 }
-
-.latestpublisheditems .container  .carousel .card .card_content p {
+.latestpublisheditems .container .tab-content .carousel .card .card_content p {
     color: #9498A7;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     margin-top: 13px;
 }
-
-.latestpublisheditems .container  .carousel .card .card_content .card_text {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text {
     display: flex;
     align-items: center;
 }
-
-.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview i {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview i {
     font-size: 13px;
     color: #FF5700;
     font-weight: 900;
     margin-top: 20px;
 }
-
-.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview p {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview p {
     color: #9498A7;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 15px;
     font-weight: 300;
 }
-
-.latestpublisheditems .container .carousel .card .card_content .card_text .starsreview p span {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .starsreview p span {
     color: #FF5700;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
-
-.latestpublisheditems .container .carousel .card .card_content .card_text .price {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .price {
     margin-left: 40px;
 }
-
-.latestpublisheditems .container  .carousel .card .card_content .card_text .price span {
+.latestpublisheditems .container .tab-content .carousel .card .card_content .card_text .price span {
     cursor: pointer;
     font-weight: 500;
     color: #FF1616;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
 }
-
-.latestpublisheditems .container  .carousel .card:focus,
-.latestpublisheditems .container  .carousel .card:hover {
+.latestpublisheditems .container .tab-content .carousel .card:focus,
+.latestpublisheditems .container .tab-content .carousel .card:hover {
     transform: scale();
     box-shadow: 5px 5px 5px 5px rgba(195, 2, 2, 0.2);
     transition: 0.5s;
 }
-
-.latestpublisheditems .container  .carousel .card:hover a {
+.latestpublisheditems .container .tab-content .carousel .card:hover a {
     color: red;
     transition: 0.5s;
 }
-
 .latestpublisheditems .container .browsebtn {
     margin-left: 43%;
     margin-right: 57%;
     padding-top: 40px;
 }
-
 .latestpublisheditems .container .browsebtn a {
     text-decoration: none;
     font-size: 14px;
@@ -870,7 +872,6 @@ header .container .head-content .nav-content nav ul li a:hover {
     display: inline-block;
     transition: all 0.5s;
 }
-
 .latestpublisheditems .container .browsebtn a button {
     width: 180px;
     height: 60px;
@@ -883,7 +884,6 @@ header .container .head-content .nav-content nav ul li a:hover {
     transition: color 0.4s linear;
     overflow: hidden;
 }
-
 .latestpublisheditems .container .browsebtn a .browsemorebtn h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -892,7 +892,6 @@ header .container .head-content .nav-content nav ul li a:hover {
     position: relative;
     z-index: 1;
 }
-
 .latestpublisheditems .container .browsebtn a button::before {
     content: "";
     position: absolute;
@@ -906,21 +905,17 @@ header .container .head-content .nav-content nav ul li a:hover {
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
-
 .latestpublisheditems .container .browsebtn a button:hover h1 {
     color: white;
 }
-
-
 .latestpublisheditems .container .browsebtn a button::before {
     transform: scaleY(0);
 }
-
 .latestpublisheditems .container .browsebtn a button:hover::before {
     transform: scaleY(1);
 }
-
 /* latestpublisheditems css end /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 
 

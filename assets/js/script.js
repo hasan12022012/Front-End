@@ -148,9 +148,12 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 
 
-
-
-
-
-
-
+function myFunction() {
+    var x = document.querySelector(".nav-content");
+    var bar_btn = document.querySelector(".responsive-bar")
+    if (x.classList.contains("bars-active")) {
+        x.classList.remove("bars-active")
+    } else {
+        x.classList.add("bars-active")
+    }
+}
